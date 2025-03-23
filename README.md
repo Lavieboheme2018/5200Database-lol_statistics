@@ -7,45 +7,28 @@ It supports viewing, analyzing, and managing player statistics, match data, achi
 ---
 
 ## 📂 Project Structure
+```plaintext
 lol-analytics/
-
 ├── index.php                   # Landing home page
-
 ├── styles.css                  # Optional global styles
-
 ├── README.md                   # Project overview and setup
-
 ├── create_tables.sql           # SQL schema (DDL)
-
 ├── insert_data.sql             # Data population (DML)
-
 ├── queries.pdf                 # SQL + results (for Milestone 3)
-
 ├── config/
-
 │   └── db.php                  # Database connection config
-
 ├── pages/
-
 │   ├── leaderboard.php         # Top players by gold
-
 │   ├── player_achievements.php# Player achievements (JOIN)
-
 │   ├── analytics.php           # Aggregated stats (AVG, COUNT)
-
 │   ├── update_profile.php      # Player profile update
-
 │   ├── delete_player.php       # Player deletion (cascade)
-
 │   ├── dashboard.php           # Chart.js visualizations
-
 │   ├── trend_data.php          # AJAX endpoint for line chart
-
 │   └── navbar.php              # Shared nav bar for all pages
-
 └── assets/                     # (optional) for future charts/images/css
-
     └── screenshots/            # Dashboard and query screenshots for PDF
+```
 
 
 ---
