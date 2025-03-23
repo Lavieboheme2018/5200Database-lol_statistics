@@ -239,3 +239,26 @@ INSERT INTO `MatchEvent` (`MatchID`, `EventType`, `TimeStamp`) VALUES
 (18, 'Jungle Steal', 1400),
 (19, 'Flash Engage', 800),
 (20, 'Smite Steal', 2300);
+
+-- Adding additional data to highlight the contrast
+INSERT INTO `PlayerAchievement` (`PlayerID`, `AchievementID`, `DateUnlocked`) VALUES
+(1, 2, '2023-03-02'),
+(1, 3, '2023-03-03'),
+(1, 4, '2023-03-04'),
+(1, 5, '2023-03-05');
+
+INSERT INTO `PlayerAchievement` (`PlayerID`, `AchievementID`, `DateUnlocked`) VALUES
+(2, 6, '2023-03-02'),
+(2, 7, '2023-03-03'),
+(2, 8, '2023-03-04');
+
+INSERT INTO `PlayerAchievement` (`PlayerID`, `AchievementID`, `DateUnlocked`) VALUES
+(3, 9, '2023-03-05'),
+(3, 10, '2023-03-06');
+
+INSERT INTO `PlayerAchievement` (`PlayerID`, `AchievementID`, `DateUnlocked`) VALUES
+(4, 11, '2023-03-06');
+
+INSERT INTO `PlayerAchievement` (`PlayerID`, `AchievementID`, `DateUnlocked`) VALUES
+(5, 12, '2023-03-07');
+
