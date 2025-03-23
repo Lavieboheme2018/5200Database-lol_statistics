@@ -17,7 +17,6 @@ lol-analytics/
 ├── config/
 │   └── db.php                  # Database connection config
 ├── pages/
-│   ├── index.php               # Optional landing page copy (if needed)
 │   ├── leaderboard.php         # Top players by gold
 │   ├── player_achievements.php# Player achievements (JOIN)
 │   ├── analytics.php           # Aggregated stats (AVG, COUNT)
