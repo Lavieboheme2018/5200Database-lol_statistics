@@ -98,7 +98,7 @@ lol-analytics/
 ## 👥 Team Members
 
 - Wanyi Jiang
-- [Your Name 1] 
+- Youcheng Zhang 
 - [Your Name 2] 
 - [Your Name 3] 
 
