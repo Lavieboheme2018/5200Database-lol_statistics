@@ -1,7 +1,7 @@
 <?php
 require_once('../config/db.php');
 
-// 数据：GoldEarned
+// Data: GoldEarned
 $goldData = $conn->query("
     SELECT p.Username, SUM(ps.GoldEarned) as TotalGold
     FROM Player p
@@ -10,7 +10,7 @@ $goldData = $conn->query("
     GROUP BY p.Username
 ")->fetchAll(PDO::FETCH_ASSOC);
 
-// 数据：Achievements
+// Data: Achievements
 $achievementData = $conn->query("
     SELECT p.Username, COUNT(pa.AchievementID) as AchievementCount
     FROM Player p
@@ -18,7 +18,7 @@ $achievementData = $conn->query("
     GROUP BY p.Username
 ")->fetchAll(PDO::FETCH_ASSOC);
 
-// 获取玩家列表供下拉菜单用
+// Fetch players for dropdown
 $players = $conn->query("SELECT PlayerID, Username FROM Player")->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
@@ -27,7 +27,7 @@ $players = $conn->query("SELECT PlayerID, Username FROM Player")->fetchAll(PDO::
 <head>
     <title>Dashboard</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
 </head>
 <body>
     <?php include 'navbar.php'; ?>

@@ -8,10 +8,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt = $conn->prepare($sql);
     $stmt->execute([$playerID]);
 
-    echo "<p style='color:red;'>🗑 Player deleted (and related data removed).</p>";
+    echo "<p class='error-message'>🗑 Player deleted (and related data removed).</p>";
 }
 
-// 获取所有玩家供选择
+// Fetch all players for selection
 $players = $conn->query("SELECT PlayerID, Username FROM Player")->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
@@ -19,7 +19,7 @@ $players = $conn->query("SELECT PlayerID, Username FROM Player")->fetchAll(PDO::
 <html>
 <head>
     <title>Delete Player</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/delete_player.css">
 </head>
 <body>
     <?php include 'navbar.php'; ?>
@@ -33,9 +33,9 @@ $players = $conn->query("SELECT PlayerID, Username FROM Player")->fetchAll(PDO::
                     <?= $player['Username'] ?> (ID: <?= $player['PlayerID'] ?>)
                 </option>
             <?php endforeach; ?>
-        </select><br><br>
+        </select>
 
-        <input type="submit" value="Confirm Delete" style="color:red;">
+        <input type="submit" value="Confirm Delete">
     </form>
 
     <p><a href="../index.php">🔙 Back to Home</a></p>

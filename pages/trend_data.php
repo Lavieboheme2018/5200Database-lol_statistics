@@ -14,7 +14,7 @@ if (isset($_GET['player_id'])) {
     $stmt->execute([$playerID]);
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    // 格式化为 JSON 输出
+    // Format data as JSON output
     $data = [
         'labels' => array_map(function($row) {
             return date("m-d", strtotime($row['DatePlayed']));

@@ -1,7 +1,7 @@
 <?php
 require_once('../config/db.php');
 
-// 处理表单提交
+// Handle form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $playerID = $_POST['PlayerID'];
     $level = $_POST['SummonerLevel'];
@@ -12,13 +12,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt = $conn->prepare($sql);
     $stmt->execute([$level, $rank, $regionID, $playerID]);
 
-    echo "<p style='color:green;'>✅ Profile updated successfully!</p>";
+    echo "<p class='success-message'>✅ Profile updated successfully!</p>";
 }
 
-// 获取所有玩家供下拉选
+// Fetch players for dropdown
 $players = $conn->query("SELECT PlayerID, Username FROM Player")->fetchAll(PDO::FETCH_ASSOC);
 
-// 获取区域选项
+// Fetch regions for dropdown
 $regions = $conn->query("SELECT RegionID, RegionName FROM Region")->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
@@ -26,7 +26,7 @@ $regions = $conn->query("SELECT RegionID, RegionName FROM Region")->fetchAll(PDO
 <html>
 <head>
     <title>Update Player Profile</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/update_profile.css">
 </head>
 <body>
     <?php include 'navbar.php'; ?>
@@ -40,10 +40,10 @@ $regions = $conn->query("SELECT RegionID, RegionName FROM Region")->fetchAll(PDO
                     <?= $player['Username'] ?> (ID: <?= $player['PlayerID'] ?>)
                 </option>
             <?php endforeach; ?>
-        </select><br><br>
+        </select>
 
         <label for="SummonerLevel">Summoner Level:</label>
-        <input type="number" name="SummonerLevel" required><br><br>
+        <input type="number" name="SummonerLevel" required>
 
         <label for="Rank">Rank:</label>
         <select name="Rank">
@@ -56,14 +56,14 @@ $regions = $conn->query("SELECT RegionID, RegionName FROM Region")->fetchAll(PDO
             <option>Master</option>
             <option>Grandmaster</option>
             <option>Challenger</option>
-        </select><br><br>
+        </select>
 
         <label for="RegionID">Region:</label>
         <select name="RegionID">
             <?php foreach ($regions as $region): ?>
                 <option value="<?= $region['RegionID'] ?>"><?= $region['RegionName'] ?></option>
             <?php endforeach; ?>
-        </select><br><br>
+        </select>
 
         <input type="submit" value="Update Profile">
     </form>

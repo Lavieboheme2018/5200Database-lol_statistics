@@ -6,12 +6,12 @@ require_once('../config/db.php');
 <html>
 <head>
     <title>Player Achievements</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/player_achievements.css">
 </head>
 <body>
     <?php include 'navbar.php'; ?>
     <h1>🎯 Player Achievements</h1>
-    <table border="1">
+    <table>
         <tr>
             <th>Username</th>
             <th>Summoner Level</th>

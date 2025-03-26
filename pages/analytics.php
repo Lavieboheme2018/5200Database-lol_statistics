@@ -6,14 +6,14 @@ require_once('../config/db.php');
 <html>
 <head>
     <title>Analytics Dashboard</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/analytics.css">
 </head>
 <body>
     <?php include 'navbar.php'; ?>
     <h1>📊 Analytics Dashboard</h1>
 
     <h2>1. Average Playtime per Player</h2>
-    <table border="1">
+    <table>
         <tr>
             <th>Username</th>
             <th>Average Duration (minutes)</th>
@@ -35,7 +35,7 @@ require_once('../config/db.php');
     </table>
 
     <h2>2. Total Matches per Player</h2>
-    <table border="1">
+    <table>
         <tr>
             <th>Username</th>
             <th>Total Matches</th>
@@ -56,7 +56,7 @@ require_once('../config/db.php');
     </table>
 
     <h2>3. Total Playtime per Player per Week</h2>
-    <table border="1">
+    <table>
         <tr>
             <th>Username</th>
             <th>Week</th>
@@ -80,7 +80,7 @@ require_once('../config/db.php');
     </table>
 
     <h2>4. Total Achievements per Player</h2>
-    <table border="1">
+    <table>
         <tr>
             <th>Username</th>
             <th>Total Achievements</th>

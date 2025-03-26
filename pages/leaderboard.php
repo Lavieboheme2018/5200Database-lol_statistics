@@ -1,5 +1,5 @@
 <?php
-// 引入数据库连接
+// Include database connection
 require_once('../config/db.php');
 ?>
 
@@ -7,12 +7,12 @@ require_once('../config/db.php');
 <html>
 <head>
     <title>Top 5 Players</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/leaderboard.css">
 </head>
 <body>
     <?php include 'navbar.php'; ?>
     <h1>🏆 Top 5 Players by Gold Earned</h1>
-    <table border="1">
+    <table>
         <tr>
             <th>Username</th>
             <th>Summoner Level</th>
