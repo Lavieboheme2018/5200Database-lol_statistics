@@ -99,8 +99,8 @@ lol-analytics/
 
 - Wanyi Jiang
 - Youcheng Zhang 
-- [Your Name 2] 
-- [Your Name 3] 
+- Shurui Liu
+- Yini Li
 
 (*Please update this section with your actual team names*)
 
