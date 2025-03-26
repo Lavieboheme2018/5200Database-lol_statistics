@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px;
+  background-color: #f0f8ff; /* Light blue background */
+}
+
+h1 {
+  color: #003366; /* Dark blue text */
+}
+
+p {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+li {
+  margin: 15px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #037dff;
+  font-size: 18px;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #e0f7fa; /* Light blue button background */
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+a:hover {
+  color: #004d99; /* Darker blue text on hover */
+  background-color: #b3e0f7; /* Slightly darker blue background */
+  text-decoration: none;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Shadow on hover */
+  transform: translateY(-2px); /* Button lift effect */
+}
+
+footer {
+  margin-top: 40px;
+  color: #888;
+}
+
+footer a {
+  color: #888;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #007bff; /* Change link color to blue on hover */
+}

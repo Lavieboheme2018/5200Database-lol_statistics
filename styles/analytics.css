@@ -1,0 +1,70 @@
+/* filepath: /Users/yinili/Desktop/5200Database-lol_statistics/styles/player_achievements.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  color: #003366;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  color: #00509e;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto 30px auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #e0f7fa;
+  color: #003366;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+a {
+  text-decoration: none;
+  color: #037dff;
+  font-size: 16px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e0f7fa;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+a:hover {
+  color: #004d99;
+  background-color: #b3e0f7;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
