@@ -3,39 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>LoL Game Analytics</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 40px;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            max-width: 500px;
-            margin: 30px auto;
-        }
-
-        li {
-            margin: 15px 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: #007bff;
-            font-size: 18px;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
     <h1>🎮 Welcome to League of Legends Game Analytics</h1>
